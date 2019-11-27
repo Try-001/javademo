@@ -16,6 +16,8 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'Deploying'
+        sh '''/bin/cp target/demo-liweihuaxxx.jar /app/server/
+java -jar /app/server/demo-liweihuaxxx.jar'''
       }
     }
 
